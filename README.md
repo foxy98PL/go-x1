@@ -18,9 +18,16 @@ RPC Endpoints
 > Quick start a full node and run in the foreground
 
 ```shell
+
+#Add Latest GoLang
+sudo apt-get update
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt install golang-go
+
 # Install dependencies (ex: ubuntu)
 apt update -y
-apt install -y golang wget git make
+apt install -y wget git make
 
 # Clone and build the X1 binary
 git clone --branch x1 https://github.com/FairCrypto/go-x1
